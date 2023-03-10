@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.mapper.BookRequestMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.BookRequest">
+            <id property="bookid" column="bookid" jdbcType="INTEGER"/>
+            <result property="userid" column="userid" jdbcType="INTEGER"/>
+            <result property="results" column="results" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        bookid,userid,results
+    </sql>
+</mapper>

@@ -1,0 +1,27 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://124.70.83.73:3306/demo-begin3?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://localhost:3306/demo-zb?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=true
+    username: zhoubo
+    password: zhoubo123
+
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: false
+server:
+  port: 8012
+
+#License相关配置
+license:
+  subject: Chinasoft-prodect
+  publicAlias: publicCert
+  storePass: public_password1234
+  licensePath: E:/ChinaSoft-Code/start20221226/license_file/license.lic
+  publicKeysStorePath: E:/ChinaSoft-Code/start20221226/license_file/publicCerts.keystore
