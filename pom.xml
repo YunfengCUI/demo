@@ -111,6 +111,7 @@
                     </excludes>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>
@@ -154,9 +155,12 @@
                             The distance will always be 0 if you're "on" the tag.
                         -->
                         <forceLongFormat>false</forceLongFormat>
+                        <tags>true</tags>
                     </gitDescribe>
                 </configuration>
             </plugin>
+
+
         </plugins>
     </build>
 
